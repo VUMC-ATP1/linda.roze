@@ -6,4 +6,4 @@ Strādāju IT jomā kā testētājs. Mana līdzšinējā praktiskā pieredze ša
 ### Mērķis
 Šajos kursos vēlos iegūt praktiskās iemaņas, lai turpmāk nākotnē varētu patstāvīgi izstrādāt un izpildīt testējamās programmatūras automatizētos testus.
 *Saite uz kursu materiāliem:* [Spied šeit](https://edu.lu.lv/mod/page/view.php?id=75415)
-![Viena bilde](img/ballon.jpg)
+![Viena bilde](img/balons.jpg)
