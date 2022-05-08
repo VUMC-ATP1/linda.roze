@@ -6,52 +6,83 @@
 div {
     border-radius: 5px;
 }
-#header {
-    height: 30px;
-    width: 100%;
-    background-color: #249df3;
-    position: fixed;
-    z-index: 1;
-}
-#footer {
-    height: 40px;
-    width: 100%;
-    background-color: lightskyblue;
-    position: relative;
-    clear: both;
-}
-.left-side {
-    height: 1000px;
-    width: 45px;
-    background-color: #249df3;
-    float: left;
-    position: fixed;
-}
-.right-side {
-    height: 100%;
-    width: 45px;
-    background-color: #249df3;
-    float: right;
-    position: fixed;
-}
-.content {
-    display: inline-block;
-    margin-top: 6px;
-    margin-left: 60px;
-    width: 75%;
-    height: 100%;
-}
-p, li {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Raleway', sans-serif;
-}
-.paragraphStyle {
-    font-size: 25px;
-    font-weight: bold;
+p, 
+li {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #7f7f7f;
+    font-size: 20px;
 }
 
-.copyright {
-float: right;
-margin-top: 10px;
-margin
-}
+.column {
+    float: left;
+    padding: 10px;
+   /* height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left, .right {
+    width: 33,33%;
+    background-color: #fea204;
+    height: 1000px;
+  }
+
+  .middle {
+    width: 33.33%;
+    background-color: #fee104;
+    height: 1000px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #Title-one
+  {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fee104;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+  }
+  .SimpleText
+  {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #7f7f7f
+  }
+  #Title-big
+  {
+    font-size: 50px;
+    text-align: center;
+    color: #fea204;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif; 
+  }
+  
+  #SubTitle
+  {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #fea204;
+    /*font-weight: bold;*/
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .MiddleText
+  {
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .Quote
+  {
+    font-family: 'Rock Salt', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
