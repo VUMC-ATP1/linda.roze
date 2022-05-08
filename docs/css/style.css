@@ -1,0 +1,88 @@
+* {
+    max-width: 100%;
+    margin: auto;
+
+}
+div {
+    border-radius: 5px;
+}
+p, 
+li {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #7f7f7f;
+    font-size: 20px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+   /* height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left, .right {
+    width: 33,33%;
+    background-color: #fea204;
+    height: 1000px;
+  }
+
+  .middle {
+    width: 33.33%;
+    background-color: #fee104;
+    height: 1000px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #Title-one
+  {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fee104;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+  }
+  .SimpleText
+  {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #7f7f7f
+  }
+  #Title-big
+  {
+    font-size: 50px;
+    text-align: center;
+    color: #fea204;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif; 
+  }
+  
+  #SubTitle
+  {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #fea204;
+    /*font-weight: bold;*/
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .MiddleText
+  {
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .Quote
+  {
+    font-family: 'Rock Salt', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
