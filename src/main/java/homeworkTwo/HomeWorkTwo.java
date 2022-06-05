@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class HomeWorkTwo {
     public static void main(String[] args) {
-
         // 1.uzdevums 3.punkts - mainīgais x ar loģiskajiem operatoriem
         int x = 8;
         // a)
@@ -65,7 +64,6 @@ public class HomeWorkTwo {
             default:
                 System.out.println("Nav tāda mēneša!");
         }
-
         // 3.uzdevums - Jāievada 3 skaitļi, jāizvada lielākais skaitlis
         int n1;
         int n2;
@@ -98,51 +96,26 @@ public class HomeWorkTwo {
         } else {
             System.out.println("Luksafors nestrādā. Šķērsojiet ceļu prātīgi!");
         }
-        // 7.uzdevums - metode aprēķina divu saitļu kopsummu
+        // 7.uzdevums - metode aprēķina divu saitļu kopsummu - rezultāta izvade
         System.out.println("Ievadiet x: ");
         int x1 = scanner.nextInt();
         System.out.println("Ievadiet y: ");
         int y1 = scanner.nextInt();
         int summa = sum(x1, y1);
         System.out.println("Ievadīto skaitļu summa ir: " + summa);
-    }
-    public static int sum(int x1, int y1) {
-        return x1 + y1;
-/*
-        //5.uzdevums - metode izdrukā vizītkarti 3 reizes
+
+        //5.uzdevums - metode izdrukā vizītkarti 3 reizes - rezultāta izvade
         int i = 0;
         while (i < 3) {
             printBusinessCard("Peteris", "Lapa", "+371 258325836", 1990);
             i++;
         }
-    }
-    private static void printBusinessCard(String name, String surname, String telNr, int bYear) {
-        System.out.println("Vizītkarte");
-        System.out.println("#############");
-        System.out.println("Vārds: " + name);
-        System.out.println("Uzvārds: " + surname);
-        System.out.println("Telefona numurs: " + telNr);
-        System.out.println("Dzimšanas gads: " + bYear);
-        System.out.println("#############");
-    }
+        // 6.uzdevums - metode izdrukā 2 vizītkartes, katru ar saviem argumentiem - rezultāta izvade
+        printBusinessCardTwo("Peteris", "Lapa", "+371 258325836", 1990);
+        printBusinessCardTwo("Lara", "Krafta", "+371 258329999", 1980);
 
-    // 6.uzdevums - metode izdrukā 2 vizītkartes, katru ar saviem argumentiem
-    printBusinessCardTwo("Peteris","Lapa","+371 258325836",1990);
-
-    printBusinessCardTwo("Lara","Krafta","+371 258329999",1980);
-}
-    private static void printBusinessCardTwo(String name, String surname, String telNr, int bYear) {
-        System.out.println("Vizītkarte");
-        System.out.println("#############");
-        System.out.println("Vārds: " + name);
-        System.out.println("Uzvārds: " + surname);
-        System.out.println("Telefona numurs: " + telNr);
-        System.out.println("Dzimšanas gads: " + bYear);
-        System.out.println("#############");
-    }
-
-        // 8.uzdevums - metore aprēķina vidējo vērtību 3 ievadītajiem skaitļiem
-        Scanner scanner = new Scanner(System.in);
+        // 8.uzdevums - metore aprēķina vidējo vērtību 3 ievadītajiem skaitļiem - info ievade/rezultāta izvade
+        // Scanner scanner = new Scanner(System.in);
         System.out.println("Ievadiet x: ");
         double x2 = scanner.nextDouble();
         System.out.println("Ievadiet y: ");
@@ -153,8 +126,35 @@ public class HomeWorkTwo {
         System.out.println("Vidējā vērtība ir: " + average);
     }
 
+    // 7.uzdevums - metode aprēķina divu saitļu kopsummu - pati metode
+    public static int sum(int x1, int y1) {
+        return x1 + y1;
+    }
+
+    //5.uzdevums - metode izdrukā vizītkarti 3 reizes - pati metode
+    private static void printBusinessCard(String name, String surname, String telNr, int bYear) {
+        System.out.println("Vizītkarte");
+        System.out.println("#############");
+        System.out.println("Vārds: " + name);
+        System.out.println("Uzvārds: " + surname);
+        System.out.println("Telefona numurs: " + telNr);
+        System.out.println("Dzimšanas gads: " + bYear);
+        System.out.println("#############");
+    }
+
+    // 6.uzdevums - metode izdrukā 2 vizītkartes, katru ar saviem argumentiem - pati metode
+    private static void printBusinessCardTwo(String name, String surname, String telNr, int bYear) {
+        System.out.println("Vizītkarte");
+        System.out.println("#############");
+        System.out.println("Vārds: " + name);
+        System.out.println("Uzvārds: " + surname);
+        System.out.println("Telefona numurs: " + telNr);
+        System.out.println("Dzimšanas gads: " + bYear);
+        System.out.println("#############");
+    }
+
+    // 8.uzdevums - metore aprēķina vidējo vērtību 3 ievadītajiem skaitļiem - vidējā aritmētiskā aprēķina metode
     public static double avg(double x2, double y2, double z2) {
         return (x2 + y2 + z2) / 3;
-    } */
- } // jāiekomentē pie 5. un 6. un 8.uzdevuma palaišanas
+    }
 }
