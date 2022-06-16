@@ -141,7 +141,7 @@ public class LoopHomeWork {
         }
         System.out.printf("Faktoriālis ir: %d", fct);
 
-        // 6.uzevums ar if ciklu
+        // 6.uzevums ar if ciklu - labots
         int pin = 1452;
         int cntr = 0;
 //        Scanner scanner = new Scanner(System.in);
