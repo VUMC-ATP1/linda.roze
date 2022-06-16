@@ -141,41 +141,22 @@ public class LoopHomeWork {
         }
         System.out.printf("Faktoriālis ir: %d", fct);
 
-        // 6.uzdevums ar do while ciklu
-        System.out.println("\n == 4. uzmini PIN 3 reizēs ==");
+        // 6.uzevums ar if ciklu
         int pin = 1452;
-        int count = 0;
-        do {
-//           Scanner scanner = new Scanner(System.in);
-            System.out.println("\n Ievadiet PIN: ");
-            int num = scanner.nextInt();
-            if (num != pin) {
-                System.out.printf("Nepareizs PIN, mēģiniet vēlreiz!");
-                count++;
-            } else if (num == pin) {
-                System.out.printf("PIN ir pieņemts, laipni lūdzam!");
-                break;
-            }
-        } while (count < 3);
-        {
-            System.out.printf("Atvainojiet, bet jūs esat bloķēts");
+        int cntr = 0;
+//        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nIevadiet PIN: ");
+        int num1 = scanner.nextInt();
+        cntr++;
+        while (num1 != pin && cntr < 3) {
+            System.out.println("Nepareizs PIN, mēģiniet vēlreiz!");
+            num1 = scanner.nextInt();
+            cntr++;
         }
-
-        // 6.uzevums ar for ciklu
-//        int pin = 1452;
-        for (int cntr = 0; cntr <= 3; cntr++) {
-//            Scanner scanner = new Scanner(System.in);
-            System.out.println("\nIevadiet PIN: ");
-            int num1 = scanner.nextInt();
-            if (num1 == pin) {
-                System.out.println("\nPIN ir pieņemts, laipni lūdzam!");
-                break;
-            } else if (num1 != pin) {
-                System.out.println("Nepareizs PIN, mēģiniet vēlreiz!");
-                cntr++;
-            } else if (cntr == 3 && num1 != pin) {
-                System.out.println("\nAtvainojiet, bet jūs esat bloķēts");
-            }
+        if (num1 == pin) {
+            System.out.println("\nPIN ir pieņemts, laipni lūdzam!");
+        } else if (cntr >= 3) {
+            System.out.println("\nAtvainojiet, bet jūs esat bloķēts");
         }
     }
 }
